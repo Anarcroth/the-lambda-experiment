@@ -127,3 +127,10 @@
   #(- % dec-by))
 
 (def dec9 (dec-maker 9))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(defn mapset
+  "Create a set from a mapping."
+  [f col]
+  (set (map f col)))
