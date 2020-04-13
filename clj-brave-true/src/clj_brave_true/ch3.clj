@@ -51,7 +51,7 @@
   [col n]
   (nth col n))
 
-(defn use-conj-vec
+(defn use-conj-list
   "Just a usage of `conj` on list.
   Can be called like so: `(use-conj-vec '(1 2 3 4) 5)`."
   [col el]
@@ -111,3 +111,10 @@
   Can be called like so: `(use-contains #{1 2 3 4} 2)`."
   [col k]
   (contains? col k))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(defn add-100
+  "Add 100 to any given number."
+  [n]
+  (+ n 100))
