@@ -118,3 +118,12 @@
   "Add 100 to any given number."
   [n]
   (+ n 100))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(defn dec-maker
+  "Decrement by a given amount each time when called."
+  [dec-by]
+  #(- % dec-by))
+
+(def dec9 (dec-maker 9))
